@@ -1,0 +1,620 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+body,p,div,span,input,img,li,ul{
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(200,200,200,0);
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /*Center slide text vertically*/
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+}
+.page1{
+    background: url('../img/page1/page1.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.startBtn{
+    background: url('../img/page1/btn.png') no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    width: 25%;
+    height: 5%;
+    left: 37.5%;
+    top: 91%;
+}
+.left{
+    background: url('../img/page1/left.png') no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    width: 11%;
+    height: 5%;
+    left: 23%;
+    top: 91%;
+    -webkit-animation: leftBall 1s infinite;	/* Safari 和 Chrome */
+}
+@-webkit-keyframes leftBall /* Safari 和 Chrome */
+{
+    50% {left: 26%;}
+}
+.right{
+    background: url('../img/page1/right.png') no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    width: 11%;
+    height: 5%;
+    left: 66%;
+    top: 91%;
+    -webkit-animation: rightBall 1s infinite;	/* Safari 和 Chrome */
+}
+@-webkit-keyframes rightBall /* Safari 和 Chrome */
+{
+    50% {left: 63%;}
+}
+.mask,.page5Mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #141244;
+    opacity: 0.9;
+    display: none;
+}
+.rule{
+    width: 75%;
+    height: 52%;
+    background: url('../img/page1/gz.png') no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    left: 9%;
+    top: 25%;
+    display: none;
+}
+.page2{
+    background: url('../img/page2/page2.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.arrow1{
+    background: url('../img/page2/arrow1.png') no-repeat;
+    background-size: 100% auto;
+    width: 24%;
+    height: 35%;
+    position: absolute;
+    top: 3%;
+    left: 11%;
+}
+.arrow{
+    display: none;
+}
+.arrow2{
+    background: url('../img/page2/arrow2.png') no-repeat;
+    background-size: 100% auto;
+    width: 9%;
+    height: 38%;
+    position: absolute;
+    top: 4%;
+    left: 46%;
+}
+.arrow3{
+    background: url('../img/page2/arrow3.png') no-repeat;
+    background-size: 100% auto;
+    width: 24%;
+    height: 39%;
+    position: absolute;
+    top: 3%;
+    left: 64%;
+}
+.ball{
+    background: url('../img/page2/ball.png') no-repeat;
+    background-size: 100% auto;
+    width: 14%;
+    height: 10%;
+    position: absolute;
+    top: 37%;
+    left: 5%;
+    z-index: 10;
+}
+.ballPlay{
+    -webkit-animation: ballPlay 2s cubic-bezier(1,1,0.5,.98) 0.5s,ballPlay2 2s cubic-bezier(.25,.84,.62,.98) 0.5s;	/* Safari 和 Chrome */
+}
+@-webkit-keyframes ballPlay /* Safari 和 Chrome */
+{
+    0% {left: 5%;}
+    100%{left: 60%;}
+}
+@-webkit-keyframes ballPlay2 /* Safari 和 Chrome */
+{
+    0% {top: 37%;}
+    100%{top: -10%}
+}
+.finger{
+    background: url('../img/page2/sz.png') no-repeat;
+    background-size: 100% auto;
+    width: 11%;
+    height: 10%;
+    position: absolute;
+    top: 35%;
+    left: 17%;
+}
+.finger1{
+    -webkit-animation: finger1 2s infinite;	/* Safari 和 Chrome */
+}
+@-webkit-keyframes finger1 /* Safari 和 Chrome */
+{
+    50% {top: 33%;}
+}
+.finger2{
+    -webkit-animation: finger2 2s infinite;	/* Safari 和 Chrome */
+}
+@-webkit-keyframes finger2 /* Safari 和 Chrome */
+{
+    50% {top: 35%;}
+}
+.finger3{
+    -webkit-animation: finger3 2s infinite;	/* Safari 和 Chrome */
+}
+@-webkit-keyframes finger3 /* Safari 和 Chrome */
+{
+    50% {top: 33%;}
+}
+.question1{
+    background: url('../img/page2/text.png') no-repeat;
+    background-size: 100% auto;
+    width: 50%;
+    height: 31%;
+    position: absolute;
+    top: 69%;
+    left: 5%;
+}
+.people{
+    background: url('../img/page2/people.png') no-repeat;
+    background-size: 100% auto;
+    width: 110%;
+    height: 55%;
+    position: absolute;
+    top: 52%;
+    right: 0;
+}
+.page3{
+    background: url('../img/page3/page3.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.question2{
+    background: url('../img/page3/text.png') no-repeat;
+    background-size: 100% auto;
+    width: 54%;
+    height: 31%;
+    position: absolute;
+    top: 69%;
+    left: 5%;
+}
+.ded{
+    background: url('../img/page3/ded.png') no-repeat;
+    background-size: 100% auto;
+    width: 43%;
+    height: 55%;
+    position: absolute;
+    top: 57%;
+    right: 0;
+}
+.kicker{
+    width: 23%;
+    height: 19%;
+    position: absolute;
+}
+.kicker1{
+    top: 28%;
+    left: 9%;
+}
+.kicker2{
+    top: 28.7%;
+    left: 39%;
+}
+.kicker3{
+    top: 28%;
+    left: 70%;
+}
+.HeaderBall{
+    background: url('../img/page2/ball.png') no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    width: 4%;
+    height: 3%;
+    top: 28%;
+    left: 47%;
+    z-index: 100;
+    display: none;
+}
+.judge,.judgeQ3,.judgeQ4{
+    width: 10%;
+    height: 6%;
+    position: absolute;
+    display: none;
+}
+.judge1{
+    background: url('../img/page3/xh.png') no-repeat;
+    background-size: 100% auto;
+    top: 47%;
+    left: 14%;
+}
+.judge2{
+    background: url('../img/page3/xh.png') no-repeat;
+    background-size: 100% auto;
+    top: 47%;
+    left: 44%;
+}
+.judge3{
+    background: url('../img/page3/dh.png') no-repeat;
+    background-size: 100% auto;
+    top: 47%;
+    left: 75%;
+}
+.page4{
+    background: url('../img/page4/page4.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.question3{
+    background: url('../img/page4/text.png') no-repeat;
+    background-size: 100% auto;
+    width: 65%;
+    height: 31%;
+    position: absolute;
+    top: 69%;
+    left: 5%;
+}
+.football{
+    background: url('../img/page4/football.png') no-repeat;
+    background-size: 100% auto;
+    width: 55%;
+    height: 43%;
+    position: absolute;
+    top: 48%;
+    right: 0;
+}
+.pos{
+    width: 34%;
+    height: 24%;
+    top: 27.5%;
+    position: absolute;
+}
+.pos1{
+    left: 5%;
+}
+.pos2{
+    left: 36%;
+}
+.pos3{
+    width: 26%;
+    left: 66.5%;
+}
+.judgeQ3-1{
+    background: url('../img/page3/xh.png') no-repeat;
+    background-size: 100% auto;
+    top: 47%;
+    left: 14%;
+}
+.judgeQ3-2{
+    background: url('../img/page3/dh.png') no-repeat;
+    background-size: 100% auto;
+    top: 47%;
+    left: 45%;
+}
+.judgeQ3-3{
+    background: url('../img/page3/xh.png') no-repeat;
+    background-size: 100% auto;
+    top: 47%;
+    left: 75%;
+}
+.page5{
+    overflow: hidden;
+    background: url('../img/page5/page5.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.question4{
+    background: url('../img/page5/text.png') no-repeat;
+    background-size: 100% auto;
+    width: 37%;
+    height: 23%;
+    position: absolute;
+    top: 69%;
+    left: 5%;
+}
+.Cluo{
+    background: url('../img/page5/people.png') no-repeat;
+    background-size: 100% auto;
+    width: 66%;
+    height: 60%;
+    position: absolute;
+    top: 55%;
+    right: 0;
+}
+.Gold{
+    width: 28%;
+    height: 23%;
+    top: 25%;
+    position: absolute;
+}
+.Gold1{
+    left: 4%;
+}
+.Gold2{
+    left: 35%;
+}
+.Gold3{
+    left: 66%;
+}
+.judgeQ4-1{
+    background: url('../img/page3/xh.png') no-repeat;
+    background-size: 100% auto;
+    top: 48%;
+    left: 14%;
+}
+.judgeQ4-2{
+    background: url('../img/page3/xh.png') no-repeat;
+    background-size: 100% auto;
+    top: 48%;
+    left: 45%;
+}
+.judgeQ4-3{
+    background: url('../img/page3/dh.png') no-repeat;
+    background-size: 100% auto;
+    top: 48%;
+    left: 75%;
+}
+.light{
+    width: 106%;
+    height: 90%;
+    background: url('../img/page5/light.png') no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    left: 4%;
+    top:11%;
+    z-index:199;
+    display: none;
+    transform-origin:46% 38%;
+    -webkit-animation: light 5s linear infinite;	/* Safari 和 Chrome */
+}
+@-webkit-keyframes light /* Safari 和 Chrome */
+{
+    100% {-webkit-transform:rotate(360deg);}
+}
+.lizi{
+    width: 73%;
+    height: 66%;
+    background: url('../img/page5/lizi.png') no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    left: 13%;
+    top:32%;
+    z-index:200;
+    display: none;
+}
+.three{
+    width: 48%;
+    height: 40%;
+    background: url('../img/page5/three.png') no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    left: 23%;
+    top:28%;
+    z-index:201;
+    display: none;
+}
+.page6{
+    background: url('../img/page6/page6.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.question5{
+    background: url('../img/page6/text.png') no-repeat;
+    background-size: 100% auto;
+    width: 49%;
+    height: 29%;
+    position: absolute;
+    top: 69%;
+    left: 5%;
+}
+.badge{
+    background: url('../img/page6/dh.png') no-repeat;
+    background-size: 100% auto;
+    width: 48%;
+    height: 60%;
+    position: absolute;
+    top: 55%;
+    right: 0;
+}
+.ballPos{
+    background: url('../img/page6/wz.png') no-repeat;
+    background-size: 100% auto;
+    width: 13%;
+    height: 9%;
+    position: absolute;
+    transition:all 2s;
+    z-index: 100;
+}
+.ballPos1{
+    top: 54%;
+    left: 46%;
+}
+.ballPos2{
+    top: 46%;
+    left: 22%;
+}
+.ballPos3{
+    top: 28%;
+    left: 48%;
+}
+.ballPos4{
+    top: 10%;
+    left: 73%;
+}
+.ballPos5{
+    top: 9%;
+    left: 30%;
+}
+.ballPos6{
+    top: 26%;
+    left: 6%;
+}
+.ballPos7{
+    top: 44%;
+    left: 76%;
+}
+.begin{
+    width: 14%;
+    height: 6%;
+    background: url('../img/page6/qd.png') no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: 59.5%;
+    left: 44%;
+}
+.end{
+    width: 7%;
+    height: 3%;
+    background: url('../img/page6/zd.png') no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: 6%;
+    left: 34%;
+}
+.line1{
+    width: 31%;
+    height: auto;
+    position: absolute;
+    left: 26%;
+    top: 48%;
+    z-index: 99;
+}
+.line2{
+    width: 31%;
+    height: auto;
+    position: absolute;
+    left: 27.5%;
+    top: 29.5%;
+    z-index: 99;
+}
+.line3{
+    width: 26%;
+    height: auto;
+    position: absolute;
+    left: 55%;
+    top: 13%;
+    z-index: 99;
+}
+.line4{
+    width: 36%;
+    height: auto;
+    position: absolute;
+    left: 38%;
+    top: 12%;
+    z-index: 99;
+}
+.line5{
+    width: 5%;
+    height: auto;
+    position: absolute;
+    left: 52%;
+    top: 30%;
+    z-index: 99;
+}
+.line6{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    z-index: 99;
+}
+.line7{
+    width: 29%;
+    height: auto;
+    position: absolute;
+    left: 52%;
+    top: 29%;
+    z-index: 99;
+}
+.line8{
+    width: 3%;
+    height: auto;
+    position: absolute;
+    left: 80%;
+    top: 12%;
+    z-index: 99;
+}
+.line9{
+    width: 23%;
+    height: auto;
+    position: absolute;
+    left: 36%;
+    top: 12%;
+    z-index: 99;
+}
+.line10{
+    width: 28%;
+    height: auto;
+    position: absolute;
+    left: 11%;
+    top: 12%;
+    z-index: 99;
+}
+.line11{
+    width: 19%;
+    height: auto;
+    position: absolute;
+    left: 13%;
+    top: 30%;
+    z-index: 99;
+}
+.line12{
+    width: 41%;
+    height: auto;
+    position: absolute;
+    left: 12%;
+    top: 29%;
+    z-index: 99;
+}
+.original,.colour{
+    width: 100%;
+    height: 100%;
+}
+.original img{
+    opacity: 0.1;
+}
+.colour img{
+    display: none;
+}
+.prompt{
+    width: 33%;
+    position: absolute;
+    color: white;
+    font-weight: 900;
+    left: 2%;
+    top: 56%;
+    font-size: 12px;
+    text-align: -webkit-left;
+    line-height: 20px;
+}

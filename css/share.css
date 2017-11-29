@@ -1,0 +1,224 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body,p,div,span,input,img,li,ul{
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(200,200,200,0);
+}
+body {
+    background: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /*Center slide text vertically*/
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+}
+.share{
+    background: url('../img/page7/page.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.share-text{
+    width: 57%;
+    height: 38%;
+    position: absolute;
+    background: url('../img/page7/shareText.png') no-repeat;
+    background-size: 100% auto;
+    left: 17%;
+    top: 27%;
+}
+.people1{
+    opacity:0.5;
+    width: 15%;
+    height: 21%;
+    position: absolute;
+    background: url('../img/page7/people1.png') no-repeat;
+    background-size: 100% auto;
+    left: 55%;
+    top: 1%;
+}
+.people2{
+    opacity:0.5;
+    width: 18%;
+    height: 16%;
+    position: absolute;
+    background: url('../img/page7/people2.png') no-repeat;
+    background-size: 100% auto;
+    left: 9%;
+    top: 12%;
+}
+.people3{
+    opacity:0.5;
+    width: 17%;
+    height: 13%;
+    position: absolute;
+    background: url('../img/page7/people3.png') no-repeat;
+    background-size: 100% auto;
+    left: 77%;
+    top: 19%;
+}
+.people4{
+    opacity:0.5;
+    width: 14%;
+    height: 13%;
+    position: absolute;
+    background: url('../img/page7/people4.png') no-repeat;
+    background-size: 100% auto;
+    left: 8%;
+    top: 54%;
+}
+.people5{
+    opacity:0.5;
+    width: 17%;
+    height: 13%;
+    position: absolute;
+    background: url('../img/page7/people5.png') no-repeat;
+    background-size: 100% auto;
+    left: 69%;
+    top: 60%;
+}
+.btn1{
+    width: 29%;
+    height: 10%;
+    position: absolute;
+    background: url('../img/page7/zjhy.png') no-repeat;
+    background-size: 100% auto;
+    left: 4%;
+    top: 83%;
+}
+.btn2{
+    width: 29%;
+    height: 10%;
+    position: absolute;
+    background: url('../img/page7/lqyh.png') no-repeat;
+    background-size: 100% auto;
+    left: 67%;
+    top: 83%;
+}
+.btn3{
+    width: 29%;
+    height: 10%;
+    position: absolute;
+    background: url('../img/page7/jrhy.png') no-repeat;
+    background-size: 100% auto;
+    left: 35%;
+    top: 83%;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:  #141244;
+    opacity: 0.9;
+    display: none;
+}
+.mask2{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     background-color:  #141244;
+     opacity: 0.9;
+     display: none;
+ }
+.mask2 img{
+    width: 8%;
+    height: auto;
+    position: absolute;
+    right: 3%;
+    top: 2%;
+}
+.fenxiang{
+    width: 39%;
+    height: 27%;
+    position: absolute;
+    background: url('../img/page7/fenxiang.png') no-repeat;
+    background-size: 100% auto;
+    left: 55%;
+    top: 3%;
+    display: none;
+}
+.play-games{
+    width: 40%;
+    height: 10%;
+    position: absolute;
+    background: url('../img/page7/wyyw.png') no-repeat;
+    background-size: 100% auto;
+    left: 30%;
+    top: 83%;
+}
+.share a{
+    width: 100%;
+    height: 100%;
+}
+.share>p{
+    position: absolute;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    width: 25%;
+}
+.box-div{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    z-index: 130;
+    top:25%;
+    display: none;
+}
+.box-div div{
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    margin-top: 15px;
+}
+.box-div input{
+    background-color:inherit;
+    color: white;
+    border: 1px solid;
+    width: 64%;
+    height: 31px;
+    font-size: 20px;
+    -webkit-user-select:auto;
+}
+.box-div img{
+    width: 25%;
+    height: auto;
+    margin-bottom: 5%;
+}
+.sub{
+    width: 26%;
+    height: 9%;
+    background: url('../img/page7/btn1.png') no-repeat;
+    background-size: 100% auto;
+    margin-left: 37%;
+}
+.prompt{
+    width: 60%;
+    position: absolute;
+    font-weight: 900;
+    font-size: 16px;
+    top: 77%;
+    left: 20%;
+    color: white;
+}

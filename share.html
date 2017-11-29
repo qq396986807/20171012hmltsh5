@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>皇马聊天室</title>
+</head>
+<body>
+<script>
+    //获取URL参数函数
+    function GetRequest() {
+        var url = location.search; //获取url中"?"符后的字串
+        var theRequest = new Object();
+        if (url.indexOf("?") != -1) {
+            var str = url.substr(1);
+            strs = str.split("&");
+            for(var i = 0; i < strs.length; i ++) {
+                theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+            }
+        }
+        return theRequest;
+    }
+
+    var Request = new Object();
+    Request = GetRequest();
+    var initiatoID2 = Request['initiatoID2'];
+    window.location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx7685795707a411d7&redirect_uri=http://niveamen.watchinga.net/hmltscs/share.php?initiatoID2="+initiatoID2+"&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect";
+</script>
+</body>
+</html>
